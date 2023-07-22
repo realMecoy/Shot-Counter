@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="fav-logo.png" />
+    <link rel="stylesheet" href="scorecard-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/fffb16a20c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Golf Scorecard</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Yardage</a></li>
+        <li class="future">Future Project</li>
+        <li class="future">Future Project</li>
+      </ul>
+    </nav>
+    <div class="card-container">
+      <h1>shot - counter</h1>
+      <div class="btn-container">
+        <div class="col-1">
+          <div class="add-btn">
+            <h2>add</h2>
+            <button class="btn add">+</button>
+          </div>
+          <div class="reset-btn">
+            <h2>reset</h2>
+            <button class="btn reset"><i class="fa fa-refresh"></i></button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="subtract-btn">
+            <h2>subtract</h2>
+            <button class="btn subtract">-1</button>
+          </div>
+          <div class="enter-btn">
+            <h2 class="enter">enter</h2>
+            <button class="btn enter" id="enter">
+              <i class="fa fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+        <h3>0</h3>
+      </div>
+    </div>
+    <div class="table-container">
+      <table border="1">
+        <tr>
+          <th>Hole</th>
+          <th>Par</th>
+          <th>Strokes</th>
+        </tr>
+        <tr>
+          <td class="hole">One</td>
+          <td class="column">
+            <input type="number" name="inpt-1" class="par" id="par1" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke1" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Two</td>
+          <td class="column">
+            <input type="number" name="inpt-2" class="par" id="par2" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke2" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Three</td>
+          <td class="column">
+            <input type="number" name="inpt-3" class="par" id="par3" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke3" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Four</td>
+          <td class="column">
+            <input type="number" name="inpt-4" class="par" id="par4" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke4" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Five</td>
+          <td class="column">
+            <input type="number" name="inpt-5" class="par" id="par5" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke5" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Six</td>
+          <td class="column">
+            <input type="number" name="inpt-6" class="par" id="par6" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke6" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Seven</td>
+          <td class="column">
+            <input type="number" name="inpt-7" class="par" id="par7" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke7" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Eight</td>
+          <td class="column">
+            <input type="number" name="inptEight" class="par" id="par8" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke8" />
+          </td>
+        </tr>
+        <tr>
+          <td class="hole">Nine</td>
+          <td class="column">
+            <input type="number" name="inpt-9" class="par" id="par9" />
+          </td>
+          <td class="column">
+            <input type="number" class="strokes" id="stroke9" />
+          </td>
+        </tr>
+        <tr>
+          <td class="total">Total</td>
+          <td class="center" id="par-total">
+            <input type="number" id="par-total-input" />
+          </td>
+          <td id="total"><input type="number" id="strokes-total-input" /></td>
+        </tr>
+      </table>
+      <button class="add-up btn">ADD UP</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="add.js"></script>
+    <!-- <script src="service-worker.js"></script> -->
+  </body>
+</html>
